@@ -1,0 +1,26 @@
+
+.tech {
+  display: block;  
+  margin: 50px 0 50px 0;      
+  padding: 0;       
+  width: 100%;  
+  text-align: center;
+   
+}
+
+.tech li{
+  vertical-align: top;
+  display: inline-block; 
+  width: 30%;
+  margin: 1%;
+  min-width: 260px;
+}
+
+
+.tech span{
+  color:black;
+  background-color: orange;
+  width:100%;
+  margin: 0;
+  padding: 20px 0 20px 0;
+}

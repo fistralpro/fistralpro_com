@@ -1,0 +1,92 @@
+/* Style the icon bar links */
+.social-icons{
+  display: block;  
+  padding: 0;      
+  margin: 0;       
+  width: 100%;     
+}
+
+.social-icons li{
+  vertical-align: top;
+  display: inline-block; 
+}
+
+.social-icons a {
+    display: block;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: black;
+    font-size: 20px;
+    background-color: transparent;
+}
+ 
+.fa {
+  padding: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+a.fa-facebook:hover{
+  color:white;
+  background: #3B5998;
+}
+
+.fa-twitter:hover {
+  background-color: #55ACEE;
+  color:white;
+}
+
+.fa-linkedin:hover {
+  background-color: #8d6cab;
+  color: white;
+}
+
+.fa-github:hover {
+  background-color: rgb(36, 41, 47);
+  color: white;
+}  
+
+.fa-phone{
+  margin-right: 12px;
+}
+
+.fa-phone:hover {
+  background-color: rgb(36, 41, 47);
+  color: white;
+}
+
+.fa-envelope:hover {
+  background-color: #ff9a00;
+  color: white;
+}
+
+
+/* B&W */
+#bw.social-icons a {
+    display: block;
+    padding: 8px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 14px;
+    background-color: transparent;
+}
+ 
+#bw.fa, #bw.a.fa-facebook, #bw.fa-twitter, #bw.fa-linkedin, #bw.fa-github, #bw.fa-phone, #bw.fa-envelope  {
+  color:white;
+  background:black;
+  padding: 10px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+#bw a:hover {
+  background-color: white;
+  color: black;
+}
+
+ 

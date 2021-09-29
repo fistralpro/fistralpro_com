@@ -1,0 +1,58 @@
+/*** Hamburger menus are bad ***/
+.menu {
+    width: 100%;
+    z-index: 999;
+    background-color:transparent;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    font-size:larger;
+    background-color: hsla(0, 0%, 0%, 0.5) ;
+    position: fixed;
+    top: 0;
+    margin: auto;
+    text-align: center;
+}
+.menu ul{
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+  
+.menu li{
+    float: left;
+    text-align: center;
+    margin-top: 14px;
+}
+  
+.menu a {
+    text-transform: uppercase;
+    text-decoration:none;
+    margin-right: 8px;
+    margin-left: 8px;
+    color: #ff9a00;
+    display: block;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-underline-offset: 4px;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ 
+ @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ 
+ .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+ }

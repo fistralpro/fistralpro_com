@@ -1,0 +1,215 @@
+/**
+the following will identify which item is firing the horizontal scrollbar
+**/
+/**
+* {
+    outline: 1px solid red;
+   }
+**/
+
+/**
+ * To keep main.css and normalize.css updateable we override the css instead of editing directly
+ */
+
+html{
+     scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Hind Guntur';
+    font-kerning: none;
+    letter-spacing: 0.05em;
+}
+
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding:0;
+    margin: 0;
+    border: 0;
+}
+
+h2 {
+    padding:0;
+    margin:0;
+}
+
+h3 {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+p {
+    opacity: 0.75;
+    font-size: large;
+    line-height: 170%;
+}
+
+
+strong {
+    opacity: 1;
+    font-weight: bolder;
+}
+
+@media screen and (max-width : 2000px)
+{
+    h1
+    {
+      letter-spacing: .8rem;
+      font-size: 2rem;
+    }
+}
+
+@media screen and (max-width : 900px)
+{
+    h1 {
+        letter-spacing: .8rem;
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width : 400px)
+{
+    h1 {
+        letter-spacing: .4rem;
+        font-size: .6rem;
+        text-align: center;
+    }
+}
+
+
+#front-cover{
+    top: 50%;
+    position: absolute;
+    transform: translate(0, -50%);
+    text-align: center;
+    margin-right: 10%;
+}
+
+.front-cover ul{
+    display: inline-block;
+}
+
+.header-logo {
+    max-width: 100%; /** this overrides the sizes:"100vw" which doesn't account for vertical scrollbar **/
+}
+
+.container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+    margin: 0;
+    padding: 0;
+}
+
+.container .section{
+    position: relative;
+    min-height: 100%;
+    background-blend-mode: multiply;
+    overflow: visible;
+    padding-top: 100px;
+}
+
+.section{
+    scroll-snap-align: start;
+    padding: 5% 10% 0 10%;
+    text-align: justify;
+    clear: left;
+}
+
+.container .section:nth-child(1){
+    background-color:transparent;
+}
+
+.container .section:nth-child(2){
+    background-color:transparent;
+
+}
+
+.container .section:nth-child(3){
+    background-color: transparent;
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-size: auto;
+}
+
+.container .section:nth-child(4){
+    background-color: transparent;
+}
+
+.circle_frame{
+    border-color: #ff9a00;
+    border-image: none;
+    border-radius:50%;
+    border-style: solid;
+    border-width: 7px;
+    width:36%;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+#portrait {
+    background-color: transparent;
+    width:calc(100% - 14px);
+    border-radius: 50%;
+    padding: 7px;
+    margin:0;
+    border:0;
+}
+
+.right_content{
+    width: 55%;
+    float: left;
+    margin-left: 5%;
+    overflow:visible;
+}
+
+.next a{
+    font-style: normal;
+    text-decoration: none;
+}
+
+.next{
+    text-align: right;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 20px;
+    padding-left: 5%;
+    min-height: 30%;
+    text-align: center;
+}
+#footer img{
+    display: block;
+    margin: auto;
+}
+
+strong {
+    color: black;
+    font-weight: bolder;
+    font-size:large;
+    text-decoration: underline;
+    text-decoration-color: #ff9a00;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+}
+
+.important{
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+}
+
+#company {
+    font-size: x-small;
+    color: whitesmoke;
+}
+
+
