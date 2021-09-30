@@ -29,22 +29,20 @@
   text-decoration: none;
   color: black;
 }
-@media screen and (max-width : 2000px)
-{
-  .social-icons a {
-    font-size: 2rem;
-  }
-  
-  .fa  {
-    line-height: 3rem;
-    width: 120px;
-  }
-
-  #bw .fa {
-    line-height: 1.4rem;
-    width: 60px;
-  }
+.social-icons a {
+  font-size: 2rem;
 }
+
+.fa  {
+  line-height: 3rem;
+  width: 120px;
+}
+
+#bw .fa {
+  line-height: 1.4rem;
+  width: 60px;
+}
+
 @media screen and (max-width : 900px)
 {
   .social-icons a {
