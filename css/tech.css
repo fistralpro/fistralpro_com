@@ -14,6 +14,13 @@
   width: 30%;
   margin: 1%;
   min-width: 260px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width : 600px) {
+  .tech li {
+    font-size: 0.7rem;
+  }
 }
 
 

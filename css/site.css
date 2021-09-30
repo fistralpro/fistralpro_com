@@ -1,17 +1,4 @@
-/**
-the following will identify which item is firing the horizontal scrollbar
-**/
-/**
-* {
-    outline: 1px solid red;
-   }
-**/
-
-/**
- * To keep main.css and normalize.css updateable we override the css instead of editing directly
- */
-
-html{
+html {
      scroll-behavior: smooth;
 }
 
@@ -21,74 +8,98 @@ body {
     letter-spacing: 0.05em;
 }
 
-
 h1 {
     text-align: center;
     text-transform: uppercase;
     padding:0;
-    margin: 0;
+    margin: 2%;
     border: 0;
 }
 
 h2 {
     padding:0;
-    margin:0;
+    margin: 2%;
+    border: 0;
 }
 
 h3 {
     font-size: larger;
     font-weight: bolder;
+    margin: 2%;
 }
 
 p {
     opacity: 0.75;
-    font-size: large;
-    line-height: 170%;
+    font-size: 1rem;
+    line-height: 140%;
+    margin: 2%;
 }
-
 
 strong {
     opacity: 1;
     font-weight: bolder;
 }
 
-@media screen and (max-width : 2000px)
-{
-    h1
-    {
+.smallprint{
+    margin-block-start: .2em;
+    margin-block-end: .2em;
+}
+
+@media screen and (max-width : 2000px) {
+    h1 {
       letter-spacing: .8rem;
       font-size: 2rem;
     }
-}
-
-@media screen and (max-width : 900px)
-{
-    h1 {
-        letter-spacing: .8rem;
-        font-size: 1rem;
+    h2{
+        font-size: 1.5rem;
     }
+    h3{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    strong {
+        text-decoration-thickness: 3px;
+        text-underline-offset: 4px;
+    }
+    .smallprint {
+        font-size: .8rem;
+    }    
 }
 
-
-@media screen and (max-width : 400px)
-{
+@media screen and (max-width : 600px) {
     h1 {
         letter-spacing: .4rem;
-        font-size: .6rem;
+        font-size: .9rem;
         text-align: center;
     }
+    h2{
+        font-size: .9em;
+    }
+    h3{
+        font-size: .8rem;
+    }
+    p {
+        font-size: .7rem;
+    }
+    strong {
+        text-decoration-thickness: 2px;
+        text-underline-offset: 1px;
+    }
+    .smallprint {
+        font-size: .5rem;
+    }    
 }
 
-
-#front-cover{
+#front-cover {
     top: 50%;
     position: absolute;
     transform: translate(0, -50%);
     text-align: center;
-    margin-right: 10%;
 }
 
-.front-cover ul{
+.front-cover ul {
     display: inline-block;
 }
 
@@ -104,48 +115,77 @@ strong {
     padding: 0;
 }
 
-.container .section{
+@media screen and (min-width : 1400px) {
+    .section{
+        max-width: 1400px;
+        margin: auto;
+    }
+    
+}
+
+.container .section {
     position: relative;
     min-height: 100%;
     background-blend-mode: multiply;
     overflow: visible;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
-.section{
+.section {
     scroll-snap-align: start;
-    padding: 5% 10% 0 10%;
+    padding: 0;
     text-align: justify;
     clear: left;
 }
 
-.container .section:nth-child(1){
+@media screen and (max-width : 2000px) {
+    .header-logo {
+        max-width: 80%; /** this overrides the sizes:"100vw" which doesn't account for vertical scrollbar **/
+    }
+    
+    .section{
+       
+    }
+}
+
+@media screen and (max-width : 900px) {
+    .section{
+        padding: 0;
+     }
+}
+
+@media screen and (max-width : 400px) {
+    .section{
+        padding: 0;
+     }
+}
+
+.container .section:nth-child(1) {
     background-color:transparent;
 }
 
-.container .section:nth-child(2){
+.container .section:nth-child(2) {
     background-color:transparent;
-
 }
 
-.container .section:nth-child(3){
+.container .section:nth-child(3) {
     background-color: transparent;
     background-image: url("../img/bg.jpg");
     background-position: center;
     background-size: auto;
 }
 
-.container .section:nth-child(4){
+.container .section:nth-child(4) {
     background-color: transparent;
 }
 
-.circle_frame{
+.circle_frame {
     border-color: #ff9a00;
     border-image: none;
     border-radius:50%;
     border-style: solid;
-    border-width: 7px;
-    width:36%;
+    border-width: .2rem;
+    width:40%;
     padding: 0;
     margin: 0;
     float: left;
@@ -160,19 +200,18 @@ strong {
     border:0;
 }
 
-.right_content{
-    width: 55%;
+.right_content {
+    width: 58%;
     float: left;
-    margin-left: 5%;
     overflow:visible;
 }
 
-.next a{
+.next a {
     font-style: normal;
     text-decoration: none;
 }
 
-.next{
+.next {
     text-align: right;
 }
 
@@ -186,6 +225,7 @@ strong {
     min-height: 30%;
     text-align: center;
 }
+
 #footer img{
     display: block;
     margin: auto;
@@ -194,11 +234,8 @@ strong {
 strong {
     color: black;
     font-weight: bolder;
-    font-size:large;
     text-decoration: underline;
     text-decoration-color: #ff9a00;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 4px;
 }
 
 .important{
@@ -211,5 +248,4 @@ strong {
     font-size: x-small;
     color: whitesmoke;
 }
-
 

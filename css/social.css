@@ -4,6 +4,11 @@
   padding: 0;      
   margin: 0;       
   width: 100%;     
+  margin-top: 30px;       
+}
+
+.social-icons ul{
+  padding: 0;      
 }
 
 .social-icons li{
@@ -12,20 +17,62 @@
 }
 
 .social-icons a {
-    display: block;
-    padding: 16px;
-    transition: all 0.3s ease;
-    color: black;
-    font-size: 20px;
-    background-color: transparent;
+  display: block;
+  transition: all 0.3s ease;
+  color: black;
+  background-color: transparent;
+  font-size: 1rem;
 }
- 
+
 .fa {
-  padding: 20px;
-  width: 50px;
   text-align: center;
   text-decoration: none;
   color: black;
+}
+@media screen and (max-width : 2000px)
+{
+  .social-icons a {
+    font-size: 2rem;
+  }
+  
+  .fa  {
+    line-height: 3rem;
+    width: 120px;
+  }
+
+  #bw .fa {
+    line-height: 1.4rem;
+    width: 60px;
+  }
+}
+@media screen and (max-width : 900px)
+{
+  .social-icons a {
+    font-size: 1.1em;
+  }
+
+  .fa  {
+    line-height: 2.1rem;
+    width: 100px;
+  }
+  
+  #bw .fa {
+    line-height: 1.0rem;
+    width: 40px;
+  }
+
+}
+
+@media screen and (max-width : 400px)
+{
+  .social-icons a {
+    font-size: .8em;
+ }
+
+  .fa  {
+    line-height: 1.6rem;
+    width: 50px;
+  }
 }
 
 a.fa-facebook:hover{
@@ -48,10 +95,6 @@ a.fa-facebook:hover{
   color: white;
 }  
 
-.fa-phone{
-  margin-right: 12px;
-}
-
 .fa-phone:hover {
   background-color: rgb(36, 41, 47);
   color: white;
@@ -64,9 +107,12 @@ a.fa-facebook:hover{
 
 
 /* B&W */
+#bw.social-icons {
+  margin-top: 0;
+}
 #bw.social-icons a {
     display: block;
-    padding: 8px;
+    padding: 4px;
     transition: all 0.3s ease;
     color: white;
     font-size: 14px;
@@ -76,7 +122,7 @@ a.fa-facebook:hover{
 #bw.fa, #bw.a.fa-facebook, #bw.fa-twitter, #bw.fa-linkedin, #bw.fa-github, #bw.fa-phone, #bw.fa-envelope  {
   color:white;
   background:black;
-  padding: 10px;
+  padding: 5px;
   width: 30px;
   text-align: center;
   text-decoration: none;
