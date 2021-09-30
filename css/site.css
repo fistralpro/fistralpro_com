@@ -128,7 +128,6 @@ strong {
     min-height: 100%;
     background-blend-mode: multiply;
     overflow: visible;
-    padding-top: 80px;
 }
 
 .section {
@@ -142,22 +141,6 @@ strong {
     .header-logo {
         max-width: 80%; /** this overrides the sizes:"100vw" which doesn't account for vertical scrollbar **/
     }
-    
-    .section{
-       
-    }
-}
-
-@media screen and (max-width : 900px) {
-    .section{
-        padding: 0;
-     }
-}
-
-@media screen and (max-width : 400px) {
-    .section{
-        padding: 0;
-     }
 }
 
 .container .section:nth-child(1) {
@@ -166,6 +149,7 @@ strong {
 
 .container .section:nth-child(2) {
     background-color:transparent;
+    padding-top: 80px;
 }
 
 .container .section:nth-child(3) {
@@ -173,10 +157,12 @@ strong {
     background-image: url("../img/bg.jpg");
     background-position: center;
     background-size: auto;
+    padding-top: 80px;
 }
 
 .container .section:nth-child(4) {
     background-color: transparent;
+    padding-top: 80px;
 }
 
 .circle_frame {
