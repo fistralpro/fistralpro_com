@@ -4,7 +4,8 @@
   padding: 0;      
   margin: 0;       
   width: 100%;     
-  margin-top: 30px;       
+  margin-top: 30px;     
+  opacity: 1;  
 }
 
 .social-icons ul{
@@ -28,19 +29,18 @@
   text-align: center;
   text-decoration: none;
   color: black;
+  line-height: 3rem;
+  width: 120px;
+  opacity: 1;
 }
 .social-icons a {
   font-size: 2rem;
 }
 
-.fa  {
-  line-height: 3rem;
-  width: 120px;
-}
-
 #bw .fa {
   line-height: 1.4rem;
   width: 60px;
+  color: white;
 }
 
 @media screen and (max-width : 900px)
@@ -73,6 +73,16 @@
   }
 }
 
+
+#inlineLinkedIn.fa {
+  width: 20px;
+}
+
+#inlineLinkedIn.fa:hover {
+  color: #006192;
+  background-color: transparent;
+}
+
 a.fa-facebook:hover{
   color:white;
   background: #3B5998;
@@ -84,7 +94,7 @@ a.fa-facebook:hover{
 }
 
 .fa-linkedin:hover {
-  background-color: #8d6cab;
+  background-color: #006192;
   color: white;
 }
 
@@ -132,5 +142,3 @@ a.fa-facebook:hover{
   background-color: white;
   color: black;
 }
-
- 
