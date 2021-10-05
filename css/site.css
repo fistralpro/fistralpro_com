@@ -27,12 +27,14 @@ h3 {
     font-weight: bolder;
     margin: 2%;
 }
-
 p {
-    opacity: 0.75;
-    font-size: 1.1rem;
     line-height: 140%;
     margin: 2%;
+}
+
+p, li {
+    opacity: 0.75;
+    font-size: 1.1rem;
 }
 
 strong {
@@ -57,7 +59,7 @@ strong {
     h3{
         font-size: 1.2rem;
     }
-    p{
+    p, li{
         font-size: 1.1rem;
     }
     strong {
@@ -82,7 +84,7 @@ strong {
     h3{
         font-size: .8rem;
     }
-    p {
+    p, li{
         font-size: .7rem;
     }
     strong {
@@ -224,6 +226,20 @@ strong {
     font-weight: bolder;
     text-decoration: underline;
     text-decoration-color: #ff9a00;
+}
+
+.orangebullet{
+    list-style: none; 
+    padding-left: 30px;  /* ensure text wraps below bullet neatly */
+}
+
+.orangebullet li::before{
+    color: #ff9a00;
+    content: "\2022";
+    display: inline-block; 
+    width: 1rem; 
+    margin-left: -35px; /* ensure text wraps below bullet neatly */
+    padding-left: 20px; /* ensure text wraps below bullet neatly */
 }
 
 .important{
