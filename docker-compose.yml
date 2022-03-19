@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  web:
+    image: fistralpro
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - .:/usr/share/nginx/html

@@ -1,0 +1,255 @@
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Hind Guntur';
+    font-kerning: none;
+    letter-spacing: 0.05em;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding:0;
+    margin: 2%;
+    border: 0;
+}
+
+h2 {
+    padding:0;
+    margin: 2%;
+    border: 0;
+}
+
+h3 {
+    font-size: larger;
+    font-weight: bolder;
+    margin: 2%;
+}
+p {
+    line-height: 140%;
+    margin: 2%;
+}
+
+p, li {
+    opacity: 0.75;
+    font-size: 1.1rem;
+}
+
+strong {
+    opacity: 1;
+    font-weight: bolder;
+}
+
+.smallprint{
+    margin-block-start: .2em;
+    margin-block-end: .2em;
+    font-size: 10px;
+}
+
+@media screen and (max-width : 2000px) {
+    h1 {
+      letter-spacing: .8rem;
+      font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    p, li{
+        font-size: 1.1rem;
+    }
+    strong {
+        text-decoration-thickness: 3px;
+        text-underline-offset: 4px;
+    }
+    .smallprint {
+        font-size:calc(10px+.8rem);        
+
+    }    
+}
+
+@media screen and (max-width : 600px) {
+    h1 {
+        letter-spacing: .4rem;
+        font-size: .9rem;
+        text-align: center;
+    }
+    h2{
+        font-size: .9em;
+    }
+    h3{
+        font-size: .8rem;
+    }
+    p, li{
+        font-size: .7rem;
+    }
+    strong {
+        text-decoration-thickness: 2px;
+        text-underline-offset: 1px;
+    }
+    .smallprint {
+        font-size:calc(10px+.5rem);        
+    }    
+}
+
+#front-cover {
+    top: 50%;
+    position: absolute;
+    transform: translate(0, -50%);
+    text-align: center;
+}
+
+.front-cover ul {
+    display: inline-block;
+}
+
+.header-logo {
+    max-width: 100%; /** this overrides the sizes:"100vw" which doesn't account for vertical scrollbar **/
+}
+
+.container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width : 1400px) {
+    .section{
+        max-width: 1400px;
+        margin: auto;
+    }
+    
+}
+
+.container .section {
+    position: relative;
+    min-height: 100%;
+    background-blend-mode: multiply;
+    overflow: visible;
+}
+
+.section {
+    scroll-snap-align: start;
+    padding: 0;
+    text-align: left;
+    clear: left;
+}
+
+@media screen and (max-width : 2000px) {
+    .header-logo {
+        max-width: 80%; /** this overrides the sizes:"100vw" which doesn't account for vertical scrollbar **/
+    }
+}
+
+.container .section:nth-child(1) {
+    background-color:transparent;
+}
+
+.container .section:nth-child(2) {
+    background-color:transparent;
+    padding-top: 80px;
+}
+
+.container .section:nth-child(3) {
+    background-color: transparent;
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-size: auto;
+    padding-top: 80px;
+}
+
+.container .section:nth-child(4) {
+    background-color: transparent;
+    padding-top: 80px;
+}
+
+.circle_frame {
+    border-color: #ff9a00;
+    border-image: none;
+    border-radius:50%;
+    border-style: solid;
+    border-width: .2rem;
+    width:40%;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+#portrait {
+    background-color: transparent;
+    width:calc(100% - 14px);
+    border-radius: 50%;
+    padding: 7px;
+    margin:0;
+    border:0;
+}
+
+.right_content {
+    width: 58%;
+    float: left;
+    overflow:visible;
+}
+
+.next a {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.next {
+    text-align: right;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 20px;
+    padding-left: 5%;
+    min-height: 30%;
+    text-align: center;
+}
+
+#footer img{
+    display: block;
+    margin: auto;
+}
+
+strong {
+    color: black;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color: #ff9a00;
+}
+
+.orangebullet{
+    list-style: none; 
+    padding-left: 30px;  /* ensure text wraps below bullet neatly */
+}
+
+.orangebullet li::before{
+    color: #ff9a00;
+    content: "\2022";
+    display: inline-block; 
+    width: 1rem; 
+    margin-left: -35px; /* ensure text wraps below bullet neatly */
+    padding-left: 20px; /* ensure text wraps below bullet neatly */
+}
+
+.important{
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+}
+
+#company {
+    font-size: x-small;
+    color: whitesmoke;
+}
+
